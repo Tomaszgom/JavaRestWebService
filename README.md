@@ -1,6 +1,6 @@
 # Java RESTful Web Service Demo by Tomasz Gomoradzki
 
-Java RESTful Web Service Demo Demo is Java and Jersey based service available on to be deployed on Apache Tomcat.
+Java RESTful Web Service Demo Demo is Java and Jersey based service, to be deployed on Apache Tomcat.
 
 Once requested it responds with produced list of purchase orders in XML or JSON format, depending on the request.
 
