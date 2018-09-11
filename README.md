@@ -13,4 +13,4 @@ Technologies used and some of the concepts deployed:
 - Jersey Library JAX-RS 2.1
 - Annotations
 - Methods: GET, POST
-- Exchange format XML or JSON (both media type are included, the response format depends on the request)
+- Exchange/response format XML and JSON
