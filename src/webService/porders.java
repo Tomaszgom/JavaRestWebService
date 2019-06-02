@@ -11,7 +11,7 @@ import javax.ws.rs.core.MediaType;
  * 
  * @author Admin
  * Purchase Orders RESTful Web Serice Demo
- *
+ * Responds with single or list of Purchase Orders
  */
 
 @Path("/ordersService")
