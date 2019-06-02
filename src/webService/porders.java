@@ -10,7 +10,7 @@ import javax.ws.rs.core.MediaType;
 /**
  * 
  * @author Admin
- * Purchase Orders RESTful Web Serice
+ * Purchase Orders RESTful Web Serice Demo
  *
  */
 
