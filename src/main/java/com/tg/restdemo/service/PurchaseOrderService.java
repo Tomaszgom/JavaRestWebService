@@ -7,12 +7,13 @@ import com.tg.restdemo.model.PurchaseOrder;
 
 public class PurchaseOrderService {
 
+	/* Adding hard-coded entities */
+	
 	public List<PurchaseOrder> getPurchaseOrdersAll(){
 		PurchaseOrder porder1 = new PurchaseOrder(100, "Prodict 11");
 		PurchaseOrder porder2 = new PurchaseOrder(200, "Prodict 12");
 		PurchaseOrder porder3 = new PurchaseOrder(200, "Prodict 13");
 		PurchaseOrder porder4 = new PurchaseOrder(200, "Prodict 14");
-		
 		
 		List<PurchaseOrder> pordersList = new ArrayList<>();
 		pordersList.add(porder1);
