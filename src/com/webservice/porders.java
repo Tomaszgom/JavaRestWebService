@@ -1,4 +1,4 @@
-package webService;
+package com.webservice;
 
 
 import javax.ws.rs.GET;
