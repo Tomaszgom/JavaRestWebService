@@ -1,4 +1,4 @@
-package com.webservice;
+package com.tg.restdemo.resources;
 
 
 import javax.ws.rs.GET;
@@ -9,14 +9,14 @@ import javax.ws.rs.core.MediaType;
 
 /**
  * 
- * @author Admin
- * Purchase Orders RESTful Web Serice Demo
+ * @author Tomasz Gomoradzki
+ * Purchase Orders RESTful Web Serice Demo - Single Class service
  * Responds with single or list of Purchase Orders
  * 
  */
 
 @Path("/ordersService")
-public class porders {
+public class PurchaseOrdersSingleClassWebService {
 	
 	@GET
 	@Produces(MediaType.TEXT_XML)
