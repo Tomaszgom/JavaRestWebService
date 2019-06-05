@@ -1,4 +1,4 @@
-package exceptionhandling;
+package com.tg.restdemo.exceptionhandling;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;

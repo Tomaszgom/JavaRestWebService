@@ -1,4 +1,4 @@
-package exceptionhandling;
+package com.tg.restdemo.exceptionhandling;
 
 public class DataNotFoundException extends RuntimeException {
 
