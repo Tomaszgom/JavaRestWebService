@@ -1,6 +1,8 @@
 package com.tg.restdemo.model;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -19,6 +21,7 @@ public class PurchaseOrder {
 	private double orderValue;
 	private String productName;
 	private Date orderDate;
+    private List<Link> links = new ArrayList<>();
 
 	
 	public PurchaseOrder() {
@@ -70,5 +73,19 @@ public class PurchaseOrder {
 		this.orderDate = orderDate;
 	}
 
+	public List<Link> getLinks() {
+		return links;
+	}
+
+	public void setLinks(List<Link> links) {
+		this.links = links;
+	}
+    
+	public void addLink(String url, String rel) {
+		Link link = new Link();
+		link.setLink(url);
+		link.setRel(rel);
+		links.add(link);
+	}
 
 }

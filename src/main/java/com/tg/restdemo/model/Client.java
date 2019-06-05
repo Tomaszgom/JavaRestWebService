@@ -16,30 +16,41 @@ import java.util.List;
 @XmlRootElement
 public class Client {
 	
-	private int client_id;
+	private double id;
 	private String firstName;
 	private String lastName;
 	private String city;
 	private Integer points;
-	private Date lastLoginDate;
 	//private List<PurchaseOrder> purchaseOrders;
 
 	public Client() {
 		
 	}
 	
-	@Override
-	public String toString() {
-		return "Client [Client_id=" + client_id + ", firstName=" + firstName + ", lastName=" + lastName + ", city="
-				+ city + ", points=" + points + ", lastLoginDate=" + lastLoginDate + "]";
-	}
-	
-	public int getClient_id() {
-		return client_id;
+
+	public Client(double client_id, String firstName, String lastName, String city, Integer points) {
+		this.id = client_id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.city = city;
+		this.points = points;
+
 	}
 
-	public void setClient_id(int cl_id) {
-		client_id = cl_id;
+
+
+	@Override
+	public String toString() {
+		return "Client [Client_id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", city="
+				+ city + ", points=" + points + "]";
+	}
+	
+	public double getId() {
+		return id;
+	}
+
+	public void setId(double cl_id) {
+		id = cl_id;
 	}
 
 	public String getFirstName() {
@@ -78,13 +89,6 @@ public class Client {
 		this.points = points;
 	}
 
-	public Date getLastLoginDate() {
-		return lastLoginDate;
-	}
-
-	public void setLastLoginDate(Date lastLoginDate) {
-		this.lastLoginDate = lastLoginDate;
-	}
 
 
 }
