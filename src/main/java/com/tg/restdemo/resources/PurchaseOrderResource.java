@@ -30,7 +30,7 @@ public class PurchaseOrderResource {
     @Produces(MediaType.APPLICATION_XML)
 	public List<PurchaseOrder> getPurchaseOrders() {
     	
-		return purchaseOrderService.getPurchaseOrdersAll();
+		return purchaseOrderService.getAllPurchaseOrders();
 		
 	}
 

@@ -15,7 +15,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class PurchaseOrder {
 	
-	private int order_id;
+	private long id;
 	private double orderValue;
 	private String productName;
 	private Date orderDate;
@@ -33,16 +33,16 @@ public class PurchaseOrder {
 
 	@Override
 	public String toString() {
-		return "PurchaseOrder [order_id=" + order_id + ", orderValue=" + orderValue
+		return "PurchaseOrder [order_id=" + id + ", orderValue=" + orderValue
 				+ ", productName=" + productName + ", orderDate=" + orderDate + "]";
 	}
 
-	public int getOrder_id() {
-		return order_id;
+	public long getId() {
+		return id;
 	}
 
-	public void setOrder_id(int order_id) {
-		this.order_id = order_id;
+	public void setId(long id) {
+		this.id = id;
 	}
 
 
