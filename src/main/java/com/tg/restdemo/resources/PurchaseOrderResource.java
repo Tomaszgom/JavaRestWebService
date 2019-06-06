@@ -48,7 +48,7 @@ public class PurchaseOrderResource {
 	}
     
     @GET
-	public List<PurchaseOrder> getMessages(@BeanParam PurchaseOrderFilterBean filterBean) {
+	public List<PurchaseOrder> getPurchaseOrders(@BeanParam PurchaseOrderFilterBean filterBean) {
 		
 		if (filterBean.getYear() > 0) {
 			return purchaseOrderService.getAllPurchaseOrdersForMonth(filterBean.getYear());
@@ -60,7 +60,7 @@ public class PurchaseOrderResource {
 	}
 
 	@POST
-	public Response addMessage(PurchaseOrder purchaseOrder, @Context UriInfo uriInfo) {
+	public Response addPurchaseOrder(PurchaseOrder purchaseOrder, @Context UriInfo uriInfo) {
 		
 		PurchaseOrder newPurchaseOrder = purchaseOrderService.addPurchaseOrder(purchaseOrder);
 		String newId = String.valueOf(newPurchaseOrder.getId());
