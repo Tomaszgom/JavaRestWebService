@@ -15,15 +15,18 @@ import javax.ws.rs.core.MediaType;
 import com.tg.restdemo.model.Client;
 import com.tg.restdemo.service.ClientService;
 
+/**
+ * 
+ * Client Resource Class handling Client requests
+ *
+ */
 
 	@Path("/clients")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	public class ClientResource {
 
-		private ClientService clientService = new ClientService();
-		
-		
+		private ClientService clientService = new ClientService();	
 		
 		@GET
 		public List<Client> getClients() {

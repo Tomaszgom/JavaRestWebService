@@ -22,7 +22,7 @@ import com.tg.restdemo.model.PurchaseOrder;
 import com.tg.restdemo.service.PurchaseOrderService;
 
 /**
- * Root resource (exposed at "purchase-orders" path)
+ * Purchase Orders root resource exposed at "purchase-orders" path)
  */
 
 @Path("/purchase-orders")
@@ -32,7 +32,7 @@ public class PurchaseOrderResource {
 	
     /**
      * Method handling HTTP GET requests. The returned object will be sent
-     * to the client as "text/plain" media type.
+     * to the client as XML media type.
      *
      * @return String that will be returned as a text/plain response.
      */
