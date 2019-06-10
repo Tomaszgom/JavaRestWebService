@@ -7,6 +7,12 @@ import java.util.Map;
 import com.tg.restdemo.dummydatabase.DummyDatabase;
 import com.tg.restdemo.model.Client;
 
+/**
+ * 
+ * Client Service layer of REST API handling Client related method calls
+ *
+ */
+
 public class ClientService {
 
 private Map<String, Client> clients = DummyDatabase.getClients();

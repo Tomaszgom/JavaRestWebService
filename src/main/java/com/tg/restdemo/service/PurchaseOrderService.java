@@ -9,10 +9,17 @@ import com.tg.restdemo.dummydatabase.DummyDatabase;
 import com.tg.restdemo.exceptionhandling.DataNotFoundException;
 import com.tg.restdemo.model.PurchaseOrder;
 
+/**
+ * 
+ * PurchaseOrder Service layer of REST API handling PurchaseOrders related method calls
+ *
+ */
+
 public class PurchaseOrderService {
 
 	private Map<Long, PurchaseOrder> purchaseOrders = DummyDatabase.getPurchaseOrders();
 	
+	// Loads example Purchase Orders
 	public PurchaseOrderService() {
 		purchaseOrders.put(1L, new PurchaseOrder(100, "Product 11"));
 		purchaseOrders.put(2L, new PurchaseOrder(200, "Product 12"));

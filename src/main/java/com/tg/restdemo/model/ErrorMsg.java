@@ -2,6 +2,12 @@ package com.tg.restdemo.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
+/**
+ * 
+ * ErrorMsg entity representing errors
+ *
+ */
+
 	@XmlRootElement
 	public class ErrorMsg {
 

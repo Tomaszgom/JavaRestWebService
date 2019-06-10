@@ -7,6 +7,11 @@ import javax.ws.rs.ext.Provider;
 
 import com.tg.restdemo.model.ErrorMsg;
 
+/**
+ * 
+ * Exception Class Mapper handling 'Data Not Found' exception
+ *
+ */
 
 @Provider
 public class DataNotFoundExceptionMapper implements ExceptionMapper<DataNotFoundException> {

@@ -6,6 +6,12 @@ import javax.ws.rs.ext.ExceptionMapper;
 
 import com.tg.restdemo.model.ErrorMsg;
 
+/**
+ * 
+ * Exception Class Mapper handling exceptions
+ *
+ */
+
 // @Provider
 public class GenericExceptionMapper implements ExceptionMapper<Throwable> {
 

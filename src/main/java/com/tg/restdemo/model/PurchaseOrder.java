@@ -9,7 +9,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * 
- * @author Tomasz Gomoradzki
  * Purchase Order model object
  *
  */

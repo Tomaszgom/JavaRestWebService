@@ -9,7 +9,6 @@ import javax.ws.rs.core.MediaType;
 
 /**
  * 
- * @author Tomasz Gomoradzki
  * Purchase Orders RESTful Web Serice Demo - Single Class service
  * Responds with single or list of Purchase Orders
  * 

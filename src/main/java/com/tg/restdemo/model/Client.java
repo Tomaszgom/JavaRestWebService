@@ -8,8 +8,7 @@ import java.util.List;
 
 /**
  * 
- * @author Tomasz Gomoradzki
- * Client model object
+ * Client model object representing Client resource to be manipulated
  *
  */
 

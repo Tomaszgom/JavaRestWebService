@@ -1,5 +1,11 @@
 package com.tg.restdemo.model;
 
+/**
+ * 
+ * Client model object
+ *
+ */
+
 public class Link {
 	private String link;
 	private String rel;

@@ -22,7 +22,7 @@ import com.tg.restdemo.model.PurchaseOrder;
 import com.tg.restdemo.service.PurchaseOrderService;
 
 /**
- * Purchase Orders root resource exposed at "purchase-orders" path)
+ * Purchase Orders root resource exposed at "purchase-orders" path
  */
 
 @Path("/purchase-orders")
