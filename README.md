@@ -11,6 +11,8 @@ Technologies used and some of the concepts deployed:
 - Java 8
 - Apache Tomcat 8.0 Application Server
 - Jersey Library JAX-RS 2.1
+- Maven
 - Annotations
-- Methods: GET, POST
+- Resources
+- Methods: GET, POST, PUT, DELETE
 - Exchange/response format XML and JSON

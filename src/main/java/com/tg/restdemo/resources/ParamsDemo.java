@@ -12,16 +12,23 @@ import javax.ws.rs.core.HttpHeaders;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriInfo;
 
-@Path("/injectdemo")
+/**
+ * 
+ * Resource point which is example of different Param types usage
+ *
+ */
+
+@Path("/paramsdemo")
 @Consumes(MediaType.TEXT_PLAIN)
 @Produces(MediaType.TEXT_PLAIN)
-public class InjectDemo {
+public class ParamsDemo {
 
 	@GET
 	@Path("annotations")
-	public String getParamsUsingAnnotations(@MatrixParam("param") String matrixParam,
-											@HeaderParam("authSessionID") String header,
-												@CookieParam("name") String cookie) {
+	public String getParamsUsingAnnotations(@MatrixParam("param") String matrixParam,	 // Similar to PathParam but with different syntax
+											@HeaderParam("authSessionID") String header, // Custom values in the header, metadata
+												@CookieParam("name") String cookie) {	 // Accessing cookies
+												/* @FormParam */
 			return "Matrix param: " + matrixParam + " Header param: " + header + " Cookie param: " + cookie;
 		}
 		

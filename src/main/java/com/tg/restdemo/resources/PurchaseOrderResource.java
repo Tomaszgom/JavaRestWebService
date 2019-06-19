@@ -16,8 +16,6 @@ import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
-
-import com.tg.restdemo.model.Client;
 import com.tg.restdemo.model.PurchaseOrder;
 import com.tg.restdemo.service.PurchaseOrderService;
 
@@ -73,6 +71,7 @@ public class PurchaseOrderResource {
 	@PUT
 	@Path("/{purchaseOrderId}")
 	public PurchaseOrder updatePurchaseOrder(@PathParam("purchaseOrderId") long id, PurchaseOrder purchaseOrder) {
+		// PathParam allows update id always to be picked up from the path (not from received json)
 		purchaseOrder.setId(id);
 		return purchaseOrderService.updatePurchaseOrder(purchaseOrder);
 	}
@@ -92,8 +91,7 @@ public class PurchaseOrderResource {
 		purchaseOrder.addLink(getUriForClient(uriInfo, purchaseOrder), "client");
 		//purchaseOrder.addLink(getUriForComments(uriInfo, purchaseOrder), "purchaseorder");
 		
-		return purchaseOrder;
-		
+		return purchaseOrder;		
 	}
 
 
