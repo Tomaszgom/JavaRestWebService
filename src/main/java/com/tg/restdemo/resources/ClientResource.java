@@ -17,7 +17,7 @@ import com.tg.restdemo.service.ClientService;
 
 /**
  * 
- * Client Resource Class handling Client requests
+ * Client Resource Class (Controller) handling Client requests
  *
  */
 

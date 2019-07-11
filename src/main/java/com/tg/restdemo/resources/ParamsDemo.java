@@ -32,9 +32,15 @@ public class ParamsDemo {
 			return "Matrix param: " + matrixParam + " Header param: " + header + " Cookie param: " + cookie;
 		}
 		
+	    /* @returns Absolute path and http headers cookies */
 		@GET
 		@Path("context")
 		public String getParamsUsingContext(@Context UriInfo uriInfo, @Context HttpHeaders headers) {
+			
+		/* 
+		 * Injecting instancce of UriInfo, by methids available for UriInfo we are able to look through all the parameters
+		 * that were sent without specifying particular parameter name
+		 */
 			
 			String path = uriInfo.getAbsolutePath().toString();
 			String cookies = headers.getCookies().toString();

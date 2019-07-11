@@ -21,6 +21,7 @@ import com.tg.restdemo.service.PurchaseOrderService;
 
 /**
  * Purchase Orders root resource exposed at "purchase-orders" path
+ * Controller Class
  */
 
 @Path("/purchase-orders")
