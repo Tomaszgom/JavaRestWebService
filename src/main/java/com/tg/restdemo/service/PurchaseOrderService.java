@@ -33,7 +33,9 @@ public class PurchaseOrderService {
 				
 	}
 	
-	// @Returns Purchase Orders for which order date month equals to desired param month
+	/* Gets purchase orders for given month
+	   @Returns Purchase Orders for which order date month equals to desired param month
+	*/
 	public List<PurchaseOrder> getAllPurchaseOrdersForMonth(int month) {
 		List<PurchaseOrder> purchaseOrdersForMonth = new ArrayList<>();
 		Calendar cal = Calendar.getInstance();

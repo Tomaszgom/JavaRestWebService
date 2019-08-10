@@ -48,7 +48,7 @@ public class PurchaseOrderResource {
     
     @GET
 	public List<PurchaseOrder> getPurchaseOrders(@BeanParam PurchaseOrderFilterBean filterBean) {
-		
+    	// Alternative option: getPurchaseOrders(@QueryParam ("month") int month) {
 		if (filterBean.getYear() > 0) {
 			return purchaseOrderService.getAllPurchaseOrdersForMonth(filterBean.getYear());
 		}

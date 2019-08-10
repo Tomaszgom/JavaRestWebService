@@ -10,6 +10,7 @@
     <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
     <init-param>
       <param-name>jersey.config.server.provider.packages</param-name>
+      <!-- Package(s) to be scanned for resource classes to be mapped in servlet -->
       <param-value>com.tg.restdemo</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
